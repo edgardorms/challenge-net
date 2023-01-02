@@ -18,8 +18,8 @@ namespace WebApplication2.Services
                     {
                         NumeroUsuario = int.Parse(campos[0]),
                         FechaNacimiento = DateTime.Parse(campos[1]),
-                        Sexo = char.Parse(campos[2]),
-                        Periodo = campos[3],
+                        Sexo = campos[2],
+                        Periodo =int.Parse(campos[3]),
                         CantidadPeliculas = int.Parse(campos[4])
                     };
                     registros.Add(registro);

@@ -28,12 +28,12 @@ namespace WebApplication2.Services
 
             // Promedio de cantidad de películas vistas por período y sexo
             informacionResumida.PromedioPeliculasVistasPorPeriodoMasculino = registros
-                .Where(x => x.Sexo == 'M')
+                .Where(x => x.Sexo.Contains('M'))
                 .GroupBy(x => x.Periodo)
                 .ToDictionary(x => x.Key, x => x.Average(y => y.CantidadPeliculas));
 
             informacionResumida.PromedioPeliculasVistasPorPeriodoFemenino = registros
-                .Where(x => x.Sexo == 'F')
+                .Where(x => x.Sexo.Contains('F'))
                 .GroupBy(x => x.Periodo)
                 .ToDictionary(x => x.Key, x => x.Average(y => y.CantidadPeliculas));
 
