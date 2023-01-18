@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="../index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./challenge1.html" class="nav-link">Challenge1</a></li>
+                <li class="nav-item"><a href="./challenge2.html" class="nav-link">Challenge2</a></li>
+                <li class="nav-item"><a href="./challenge3.html" class="nav-link">Challenge3</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="container">
+        <form class="input-group mb-3" enctype="multipart/form-data" id="myForm">
+            <input type="file" name="archivo" class="form-control" />
+            <button type="submit" class="input-group-text">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="container d-flex justify-content-evenly">
+        <div class="list-group mt-5">
+
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary"
+                onclick="seleccionarElemento(0)">Promedio vistas</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary"
+                onclick="seleccionarElemento(1)">Promedio periodo </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success"
+                onclick="seleccionarElemento(2)"> Promedio periodo Hombre</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger"
+                onclick="seleccionarElemento(3)">Promedio periodo Mujer </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning"
+                onclick="seleccionarElemento(4)">Promedio vistas por Sexo </a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info"
+                onclick="seleccionarElemento(5)">Promedio vistas por Edad </a>
+
+        </div>
+
+
+        <div class="row justify-content-center align-items-center">
+            <div class="col2" style="max-width: 460px;"><canvas id="vistas"></canvas></div>
+            <div class="col2" style="max-width: 460px;"><canvas id="periodo"></canvas></div>
+            <div class="col2" style="max-width: 460px;"><canvas id="periodoM"></canvas></div>
+            <div class="col2" style="max-width: 460px;"><canvas id="periodoF"></canvas></div>
+            <div class="col2" style="max-width: 460px;"><canvas id="sexo"></canvas></div>
+            <div class="col2" style="max-width: 460px;"><canvas id="edad"></canvas></div>
+        </div>
+    </div>
+
+
+    <script src="../javascript/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
